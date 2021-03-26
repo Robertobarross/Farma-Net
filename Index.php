@@ -17,9 +17,10 @@
     body {background-color: red;} /* Cor de fundo vermelha */
     .titulo{font-size: 60px; font-family: Arial; color: white;} /* Estilo dos titulos */
     .subtitulo{font-size: 20px; font-family: Arial; font-style: italic; color: white;}/* Estilo do subtitulo */
-    #Conteudo{width: 70%; min-height: 500px; border: 1px solid; color: white; float: left;}     
-    #Imagem{width: 28%; min-height: 500px; border: 1px solid; color: white; float: right;}
-
+    #Conteudo{width: 68%; min-height: 500px; border: 1px solid; color: white; float: left; margin-top: 16px;}     
+   /* #Imagem{width: 28%; min-height: 500px; border: 1px solid; color: white; float: right;} */
+   .img{width: 31%; min-height: 500px; border: 1px solid; color: white; float: right; border: red;} 
+   
     </style>
     <!-- Fim da configuração da div global --> 
     
@@ -34,13 +35,16 @@
 
 <!-- Inicio da div conteúdo -->
 <div id="Conteudo">
-    teste
+<?php
+include "FormBuscar.php";
+?>
         
 </div>
 <!-- Inicio da div conteúdo -->
 
 <!-- Inicio da div imagem --> 
 <div id="Imagem">
+<br><img src="postagens/post/img_farma.png" class="img"> 
 
 
 </div>
