@@ -17,7 +17,7 @@
     </form>
 
     <style type="text/css"> /* Configuração do campo de pesquisa */
-    .buscar{width: 35%; font-family: Arial; margin-top: 8px; border-radius: 8px; border: gray; min-height: 25px; background-color: pink;}
+    .buscar{width: 40%; font-family: Arial; margin-top: 8px; border-radius: 12px; border: gray; min-height: 25px; background-color: #99ffff;}
     </style>
 
 </div>
