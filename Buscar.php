@@ -15,13 +15,14 @@ include "connect.php"; // Arquivo para conexão com o banco de dados //
 <!-- Inicio da div bucar -->
 <div id="buscar" align="center">
     <style type="text/css">/* Configuração dos intens da div */
-    body{background-color: red;}
-    #buscar{width: 40%; min-height: 550px; border: 1px solid; color: white; margin: 20px 30%; font-size: 20px; font-family: Arial;}
-    .img{width: 40%; min-height: 40px;}
+   /* body{background-color: red;} */
+    body {background-image: url("imagens/web.png");} /* Imagem cor de fundo */
+    #buscar{width: 25%; min-height: 380px; border: 1px solid black; color: white; margin: 20px 35%; font-size: 12px; font-family: Arial;}
+    .img{width: 30%; min-height: 30px;}
     .bt{background-color: green; width: 30%; font-family: Arial; color: white; border-radius: 10px;}
     .bt:hover{background-color: greenyellow;}
-    .link{font-size: 15px; font-family: Arial;}
-    .link:hover{background-color: white;}
+    .link{font-size: 10px; font-family: Arial;}
+    .link:hover{background-color: greenyellow;}
     </style>
 
 <?php // Arquivo de busca no banco de dados e variavéis da conexão //
