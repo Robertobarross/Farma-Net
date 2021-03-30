@@ -156,6 +156,7 @@ $(function () {
     <a href="https://www.instagram.com/"><img src="Imagens/instagram.png" alt="#" class="Redes_S"/></a>
     <a href="https://br.linkedin.com/"><img src="Imagens/linkedin.png" alt="#" class="Redes_S"/></a>
     <a href="https://web.whatsapp.com/"><img src="Imagens/whatsapp.png" alt="#" class="Redes_S"/></a>
+    <a href="Index.php"><img src="Imagens/site.png" alt="#" class="Redes_S"/></a>
 
     <!-- Data atual -->
     <br><span class="data">Hoje: <?php echo date('d/m/y');?></span></br>
