@@ -8,27 +8,38 @@
 </head>
 <body>
 
-    <!-- Inicio da div global -->
-    <div id="Global">
+
+<!-- Inicio da div global -->
+<div id="Global">
 
     <!-- Configuração da div global com css -->
     <style type="text/css">
     #Global{height: auto;}/* Autura automático */
-    body {background-image: url("imagens/web.png");} /* Imagem cor de fundo */
-    #Conteudo{width: 68%; min-height: 430px; border: 1px solid; color: white; float: left; margin-top: 16px;} /* Delimita o tamanho da div conteúdo */   
-   .img{width: 31%; min-height: 500px; border: 1px solid; color: white; float: right; border: red;} /* Determina o tamanho da imagem do lado direito */
-   .imgTopo{width: 100%; height: 30%;} /* Determina o tamanho da barra do Topo */
-   
+    body {background-image: url("imagens/web.png");} /* Imagem cor de fundo */ 
     </style>
     <!-- Fim da configuração da div global --> 
+
+
     
 <!-- inicio da div topo --> 
 <div id="Topo" align="center">
 
     <img src="Imagens/Topo.png" class="imgTopo"><!-- Imagem da barra do Topo -->
 
-    <a href="#" class="menu-open">MENU</a><!-- Botão Do menu -->
+<?php 
+    include "FormBuscar.php";// Arquivo de insere a barra de pesquisa //
+?>
+    <style type="text/css">
+    .imgTopo{width: 100%; height: 30%;} /* Determina o tamanho da barra do Topo */
+    </style>
 
+</div><!-- Fima da div topo -->
+
+
+
+<div id="Menu"><!-- Inicio da div menu --> 
+
+<!-- Aqui começam os códigos que definem o Menu -->
 <div class="menu"><!-- Div com os links do menu -->
     <a href="#" class="menu-close">&times;</a>
     <ul>
@@ -49,7 +60,7 @@
     body{font-family: 'Roboto', sans-serif;}
  
     /* estilizando o botão abrir menu */
-    .menu-open{background: #99ffff; color: gray; font-size: 15px; font-family: Arial black; text-decoration: none; padding: 5px 20px; margin: 10px; border-radius: 10px; display: inline-block;text-transform: uppercase;}
+    .menu-open{background: #99ffff; color: gray; font-size: 15px; font-family: Arial black; text-decoration: none; padding: 5px 20px; margin: 10px; margin-top: -5px; display: inline-block;text-transform: uppercase;}
     .menu-open:hover{background-color: green;}
 
 
@@ -61,13 +72,13 @@
     .link:hover{background-color: green;}
 
     /* estilizando o menu em si */
-    .menu {overflow: hidden; background: rgba(0,0,0,.95); padding: 40px 0 0 40px; position: fixed; top: 0; right: -290px; height: 100%; z-index: 2; transition: 0.5s; width: 200px;} 
+    .menu {overflow: hidden; background: rgba(0,0,0,.95); padding: 40px 0 0 40px; position: fixed; top: 0; right: -290px; height: 100%; z-index: 2; transition: 0.5s; width: 200px; background-color: #99cc66;} 
 
     /* estilizando o menu + ul */
     .menu ul{list-style: none; padding: 0; margin: 0; overflow-y: auto; width: 500px; height: 95%;}
 
     /* estilizando o menu + ul li + a */
-    .menu ul li a {display: block; border-bottom: 1px solid #131313; padding: 6px 4px 6px 4px; color: white;transition: 0.3s; text-decoration: none;}
+    .menu ul li a {display: block; border-bottom: 1px solid white; padding: 6px 4px 6px 4px; color: white;transition: 0.3s; text-decoration: none;}
 </style>
 
 <!-- Arquivo responsável por fazer deslizar a barra de menu -->
@@ -93,35 +104,73 @@ $(function () {
 });
 </script>
 <!-- Fim do arquivo responsável por fazer deslizar a barra de menu -->
+<!-- Finaliza também os códigos que definem o Menu -->
 
 </div>
-<!-- Fim da div topo --> 
+<!-- Fim da div menu --> 
+
 
 
 <!-- Inicio da div conteúdo -->
 <div id="Conteudo">
 
-<?php 
-    include "FormBuscar.php";// Arquivo de insere a barra de pesquisa //
-?>
+    <br><a href="#" class="menu-open">MENU</a></br><!-- Botão Do menu -->
+    <br><img src="Imagens/logo.jpeg" class="imglogo"></br><!-- Imagem logomarca --> 
+
+    <style type="text/css">
+    #Conteudo{width: 50%; min-height: 430px; border-radius: 10px; border: 1px solid; color: #99ff00; float: left; margin-top: 16px;} /* Delimita o tamanho da div conteúdo */  
+    .imglogo{width: 55%; height: 330px; margin-left: 150px; box-shadow: 10px 10px 10px gray; border-radius: 10px;}/* Define o estilo da imagem logomarca */
+    </style>
         
 </div>
 <!-- Inicio da div conteúdo -->
 
-<!-- Inicio da div imagem --> 
-<div id="Imagem">
 
-    <br><img src="postagens/post/img_farma.png" class="img"><!-- Imagem do lado direito -->
+
+<!-- Inicio da div texto --> 
+<div id="Texto">
+
+    <h1 class="texto1" align="center">Ofertas e descontos especiais!</h1><!-- texto 1 --> 
+    <h2 class="texto2" align="center">50% de desconto</h2><!-- texto 2 --> 
+    <h3 class="texto3" align="center">Na linha de medicamentos genéricos! Confira outras ofertas no nosso menu.</h3><!-- texto --> 
+
+    <style type="text/css">
+    #Texto{width: 48%; min-height: 430px; border-radius: 10px; border: 1px solid; color: #99ff00; float: left; margin-left: 18px; margin-top: 16px;} /* Estilo da div texto */
+    .Texto1{font-size: 150px; font-family: Impact;} /* Estilo do texto 1 */
+    .texto2{font-size: 80px;} /* Estilo do texto 2 */
+    .texto3{font-size: 15px; font-family: Arial;} /* Estilo do texto 3 */
+    </style>
 
 </div>
-<!-- Fim da div imagem --> 
+<!-- Fim da div texto -->
+
+
 
 <!-- Inicio da div rodapé -->
 <div id="Rodape">
-    Rodapé
+    
+    <h1 class="R_Sociais">Visite nossas redes sociais:</h1>
+
+    <!-- Links redes sociais -->
+    <a href="https://pt-br.facebook.com/"><img src="Imagens/facebook.png" alt="#" class="Redes_S"/></a>
+    <a href="https://www.instagram.com/"><img src="Imagens/instagram.png" alt="#" class="Redes_S"/></a>
+    <a href="https://br.linkedin.com/"><img src="Imagens/linkedin.png" alt="#" class="Redes_S"/></a>
+    <a href="https://web.whatsapp.com/"><img src="Imagens/whatsapp.png" alt="#" class="Redes_S"/></a>
+
+    <!-- Data atual -->
+    <br><span class="data">Hoje: <?php echo date('d/m/y');?></span></br>
+    <!-- Direitos -->
+    <br><h2 class="R_Sociais">&COPY; Copyright | 2021 | Farma+Net </h2></br>
+
+    <style type="text/css"> 
+    #Rodape{width: 100%; min-height: 50px; float: left; margin-top: 35px; border: 1px solid; color: #006600; background-color: #006600;} /* Estilo da div Rodapé */
+    .R_Sociais{font-size: 15px; font-family: Arial; color: #99ffff; margin: 10px;} /* Estilo do texto */
+    .Redes_S{width: 30px; margin: 10px;} /* Estilo das imagens das redes sociais */
+    .data{font-size: 15px; font-family: Arial; color: #99ffff; margin: 10px;} /* Estilo da data */
+    </style>
+
 </div>
 <!-- Fim da div rodapé -->
-
 
 </div>
     <!-- Fim da div global -->
