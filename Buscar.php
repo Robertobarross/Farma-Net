@@ -17,7 +17,7 @@ include "connect.php"; // Arquivo para conexão com o banco de dados //
     <style type="text/css">/* Configuração dos intens da div */
    /* body{background-color: red;} */
     body {background-image: url("imagens/web.png");} /* Imagem cor de fundo */
-    #buscar{width: 25%; min-height: 380px; border: 1px solid black; color: white; margin: 20px 35%; font-size: 12px; font-family: Arial;}
+    #buscar{width: 25%; min-height: 380px; border: 1px solid #99ff00; color: white; margin: 20px 35%; font-size: 12px; font-family: Arial;}
     .img{width: 30%; min-height: 30px;}
     .bt{background-color: green; width: 30%; font-family: Arial; color: white; border-radius: 10px;}
     .bt:hover{background-color: greenyellow;}
@@ -46,7 +46,7 @@ include "connect.php"; // Arquivo para conexão com o banco de dados //
     <!-- Carrega a imagem da pasta -->
     <br><img src="postagens/<?php echo "post"."/".$imagem;?>"class="img"> 
     <!-- Botões de navegação -->
-    <p><input name="entrar" type="button" id="button4" onclick=location.href='Vendas.php' value="Comprar" class="bt"/>
+    <p><input name="entrar" type="button" id="button4" onclick=location.href='Compras.php' value="Comprar" class="bt"/>
     <p><input name="entrar" type="button" id="button4" onclick=location.href='https://web.whatsapp.com/83991243418' value="WhatsApp" class="bt"/>
     <!-- Link para retornar para página inicial -->
     <p><a href="Index.php" class="link">Voltar para página inicial</a></p>
