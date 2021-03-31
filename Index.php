@@ -43,11 +43,12 @@
 <div class="menu"><!-- Div com os links do menu -->
     <a href="#" class="menu-close">&times;</a>
     <ul>
-    <br><li><a href="#" target="_blank" class="link">Google</a></li></br>
-    <br><li><a href="#" target="_blank" class="link">Yahoo</a></li></br>
-    <br><li><a href="#" target="_blank" class="link">Facebook</a></li></br>
-    <br><li><a href="#" target="_blank" class="link">Flickr</a></li></br>
-    <br><li><a href="#" target="_blank" class="link">Instagram</a></li></br>
+    <br><li><a href="Formlogin.php" target="_blank" class="link">Login</a></li></br>
+    <br><li><a href="#" target="_blank" class="link">Medicamentos</a></li></br>
+    <br><li><a href="#" target="_blank" class="link">Perfumária</a></li></br>
+    <br><li><a href="#" target="_blank" class="link">Beleza</a></li></br>
+    <br><li><a href="#" target="_blank" class="link">Cosméticos</a></li></br>
+    <br><li><a href="#" target="_blank" class="link">Infantil</a></li></br>
     </ul>
 </div><!-- Fim da div links menu -->
 
@@ -165,9 +166,9 @@ $(function () {
 
     <style type="text/css"> 
     #Rodape{width: 100%; min-height: 50px; float: left; margin-top: 35px; border: 1px solid; color: #006600; background-color: #006600;} /* Estilo da div Rodapé */
-    .R_Sociais{font-size: 15px; font-family: Arial; color: #99ffff; margin: 10px;} /* Estilo do texto */
+    .R_Sociais{font-size: 12px; font-family: Arial; color: #99ffff; margin: 10px;} /* Estilo do texto */
     .Redes_S{width: 30px; margin: 10px;} /* Estilo das imagens das redes sociais */
-    .data{font-size: 15px; font-family: Arial; color: #99ffff; margin: 10px;} /* Estilo da data */
+    .data{font-size: 12px; font-family: Arial; color: #99ffff; margin: 10px;} /* Estilo da data */
     </style>
 
 </div>
